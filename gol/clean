@@ -1,0 +1,7 @@
+#Simple Build Script
+
+#Clean up
+echo Clean up
+
+rm *.class
+rm *.jar

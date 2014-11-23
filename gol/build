@@ -1,0 +1,17 @@
+
+./clean
+
+#First compile hello.java
+#echo First compile the java 
+#javac -verbose *.java
+
+javac Board.java
+javac BoardOutput.java
+javac main.java
+
+
+#Now convert to dex file
+#echo Now convert to dex format
+#dx --dex --verbose --output=main.jar ./main.class
+dx --dex --verbose --output=main.jar *.class
+
