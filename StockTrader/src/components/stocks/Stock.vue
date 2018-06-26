@@ -35,7 +35,10 @@
 
 <script>
 
+    import {totalCost} from '../mixins/totalCost';
+
     export default {
+        mixins: [totalCost],
         data() {
             return {
                 quantity: 0
@@ -50,9 +53,6 @@
             },
             insufficientFunds() {
                 return (this.quantity * this.stock.price) > this.funds;
-            },
-            totalCost() {
-                return this.quantity * this.stock.price;
             }
         },
         methods: {

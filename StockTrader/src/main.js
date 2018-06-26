@@ -7,6 +7,7 @@ import store from './store/store';
 
 Vue.use(VueRouter);
 
+// Global filter
 Vue.filter('currency', (value) => {
   return '$' + value.toLocaleString();
 });

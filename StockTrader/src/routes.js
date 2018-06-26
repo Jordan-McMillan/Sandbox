@@ -16,7 +16,6 @@ const Stocks = resolve => {
 	});
 };
 
-
 export const routes = [
     { path: '/', component: Home },
     { path: '/portfolio', component: Portfolio },

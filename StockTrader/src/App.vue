@@ -36,7 +36,7 @@
     }
 
     .slide-leave-active {
-        animation: slide-out 200ms ease-out forwards;
+        animation: slide-out 20ms ease-out forwards;
     }
 
     @keyframes slide-in {

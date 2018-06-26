@@ -35,8 +35,10 @@
 <script>
 
     import {mapActions} from 'vuex';
+    import {totalCost} from '../mixins/totalCost';
 
     export default {
+        mixins: [totalCost],
         data() {
             return {
                 quantity: 0
@@ -48,9 +50,6 @@
         computed: {
             insufficientQuantity() {
                 return this.quantity > this.stock.quantity;
-            },
-            totalCost() {
-                return this.quantity * this.stock.price;
             }
         },
         methods: {
